@@ -1,4 +1,6 @@
 package com.example.nlopezjimenez.simonejer;
+        import android.content.Context;
+        import android.content.Intent;
         import android.graphics.Color;
         import android.media.MediaPlayer;
         import android.support.v7.app.AppCompatActivity;
@@ -222,7 +224,9 @@ public class MainActivity extends AppCompatActivity {
                 ChosenColor.clear();
                 Level++;
             } else { // En caso de perder limpia ambos arrays y restablece la dificultad al primer nivel.
-                Toast.makeText(getApplicationContext(), "HAS PERDIDO", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), "HAS PERDIDO", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this,Main2Activity.class);
+                startActivity(intent);
                 CONT=0;
                 LVL=3;
                 Level=1;

@@ -14,5 +14,6 @@ public class Main2Activity extends AppCompatActivity {
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_emerg);
+        return null;
     }
 }
