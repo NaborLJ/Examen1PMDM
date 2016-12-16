@@ -225,12 +225,12 @@ public class MainActivity extends AppCompatActivity {
                 Level++;
             } else { // En caso de perder limpia ambos arrays y restablece la dificultad al primer nivel.
                 //Toast.makeText(getApplicationContext(), "HAS PERDIDO", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MainActivity.this,Main2Activity.class);
-                startActivity(intent);
                 CONT=0;
                 LVL=3;
                 Level=1;
-
+                //Creamos en intent que realizará el intento de llamada a la clase "Main2Activity"
+                Intent intent = new Intent(MainActivity.this,Main2Activity.class);
+                MainActivity.this.startActivity(intent);
             }
             ChosenColor.clear();
 
